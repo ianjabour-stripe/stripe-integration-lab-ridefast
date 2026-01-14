@@ -1,11 +1,11 @@
 :root {
-  --background: #0C0C0C;
-  --header-bg-color: #0C0C0C66;
+  --background: #0c0c0c;
+  --header-bg-color: #0c0c0c66;
   --text: #fff;
   --border-color: #1a1a1a;
-  --button-bg-color: #FFB7B2;
-  --button-hover-bg-color: #A0E7E5;
-  --button-text-color: #0C0C0C;
+  --button-bg-color: #ffb7b2;
+  --button-hover-bg-color: #a0e7e5;
+  --button-text-color: #0c0c0c;
   --font: monospace;
 }
 
@@ -18,12 +18,18 @@
   overflow: hidden;
 }
 
+html {
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
   font-family: var(--font);
   background: var(--background);
   color: var(--text);
+  overflow-y: overlay;
 }
 
 .App {
@@ -59,7 +65,7 @@ body {
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -73,8 +79,8 @@ body {
   figure {
     padding: 0;
     margin: 0;
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 200px;
     background-image: url(https://placehold.co/300x200);
     background-position: center;
     background-size: cover;
@@ -120,22 +126,24 @@ body {
     color: var(--button-text-color);
     font-family: var(--font);
     outline: none;
+    width: 100%;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background: var(--button-hover-bg-color);
       cursor: pointer;
     }
   }
 }
 
-.ProductDetail {
+.ProductPreview {
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(5px);
   cursor: zoom-out;
 
   .content {
@@ -146,15 +154,15 @@ body {
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
-    overflow:hidden;
+    overflow: hidden;
     border-radius: 8px;
     border: 4px solid var(--button-bg-color);
 
     figure {
-      width: 50vw;
-      height: 85vh;
+      width: min(800px, 80vw);
+      height: 400px;
     }
-    
+
     .description {
       position: absolute;
       top: 0;
@@ -171,6 +179,104 @@ body {
         margin: 0;
         border-bottom: 1px dashed;
       }
+    }
+  }
+}
+
+.CheckoutPage {
+  padding: 16px;
+
+  form {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 500px;
+
+    h2 {
+      margin: 0;
+      text-align: center;
+    }
+
+    .pricing {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8px;
+    }
+
+    .ProductImage {
+      border-radius: 8px;
+      figure {
+        width: 100%;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    .back {
+      text-align: center;
+    }
+
+    input {
+      color: inherit;
+      background: none;
+      border: 2px solid #ccc;
+      padding: 8px;
+      font-size: 16px;
+      &::placeholder {
+        color: currentColor;
+        opacity: 0.5;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: var(--button-hover-bg-color);
+      }
+    }
+
+    button {
+      padding: 8px;
+      border: none;
+      border-top: 1px solid;
+      border-radius: none;
+      background: var(--button-bg-color);
+      text-transform: uppercase;
+      color: var(--button-text-color);
+      font-family: var(--font);
+      outline: none;
+      width: 100%;
+
+      &:hover,
+      &:focus {
+        background: var(--button-hover-bg-color);
+        cursor: pointer;
+      }
+    }
+
+    .placeholder {
+      width: 100%;
+      height: 200px;
+      text-align: center;
+      border: 2px dashed currentColor;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
