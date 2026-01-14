@@ -15,7 +15,7 @@
     "concurrently": "4.1.2",
     "prettier": "^3.7.4"
   },
-  "homepage": "http://localhost:3000/checkout",
+  "homepage": "http://localhost:3000",
   "proxy": "http://localhost:4242",
   "scripts": {
     "start-client": "react-scripts start",
