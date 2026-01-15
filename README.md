@@ -20,6 +20,6 @@ npm install
 npm start
 ~~~
 
-3. Go to [http://localhost:3000](http://localhost:3000)
+3. Go to [http://localhost:3000/stripe-integration-lab-ridefast](http://localhost:3000/stripe-integration-lab-ridefast)
 
 (server will run on http://localhost:4242)
