@@ -144,7 +144,7 @@ export const PRODUCTS = [
     name: "Maserati GranTurismo",
     price: 329.99,
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXFAIfUIXfzDtJkYW-5HG18Rr73Qh2U7inQ&s",
+      "https://maserati.scene7.com/is/image/maserati/maserati/international/Models/granturismo/granturismo-gt/gt/performance/GT-Toggle-1.jpg?wid=4000&hei=1920&fmt=jpg&qlt=80,0&resMode=sharp2&op_usm=0.3,0.3,2,1&fit=vfit,1&fit=constrain",
     description: `Luxurious Italian grand tourer with exotic flair.
     Powerful V8 engine with sonorous exhaust note.
     Stylish design with premium interior craftsmanship.`,
@@ -173,7 +173,7 @@ export const PRODUCTS = [
     name: "Dodge Challenger SRT Hellcat",
     price: 229.99,
     image:
-      "https://nasaspeed.news/wp-content/uploads/2016/02/DG015_372CL-696x464.jpg",
+      "https://cdn.pixabay.com/photo/2023/06/07/08/45/car-8046619_1280.jpg",
     description: `Iconic American muscle car with modern performance.
     Supercharged V8 engine producing massive horsepower.
     Retro-inspired design with modern technology features.`,
@@ -203,17 +203,17 @@ export const PRODUCTS = [
     name: "Toyota Supra",
     price: 199.99,
     image:
-      "https://cdn.pixabay.com/photo/2021/08/31/19/02/luxury-car-6589869_1280.jpg",
+      "https://machineswithsouls.com/wp-content/uploads/2024/08/DSC_2937-1-1.jpg",
     description: `Legendary Japanese sports car reborn.
     Turbocharged inline-six engine for impressive performance.
     Collaborative development with BMW for enhanced engineering.`,
   },
   {
     id: "product_1022",
-    name: "Subaru WRX STI",
+    name: "Porsche WRX STI",
     price: 169.99,
     image:
-      "https://media.hagerty.com/media/wp-content/uploads/2026/01/WRX-STI-Sport%E2%99%AF-PROTOTYPE_2.jpg",
+      "https://cdn.pixabay.com/photo/2020/01/26/18/52/porsche-4795517_1280.jpg",
     description: `Rally-inspired performance sedan.
     Turbocharged boxer engine with symmetrical all-wheel drive.
     Advanced handling capabilities for all weather conditions.`,
@@ -243,7 +243,7 @@ export const PRODUCTS = [
     name: "Mercedes-AMG C63",
     price: 259.99,
     image:
-      "https://cdn.pixabay.com/photo/2017/07/13/17/26/car-2501202_1280.jpg",
+      "https://cdn.pixabay.com/photo/2018/09/20/14/23/mercedes-190-sl-3690985_1280.jpg",
     description: `High-performance luxury sedan with AMG pedigree.
     Powerful V8 engine with impressive acceleration.
     Sophisticated technology and premium interior.`,
@@ -252,7 +252,7 @@ export const PRODUCTS = [
     id: "product_1026",
     name: "Porsche Boxster GTS",
     price: 239.99,
-    image: "https://images.pistonheads.com/nimg/42891/PCGB20_0925_fine.jpg",
+    image: "https://cdn.pixabay.com/photo/2020/05/19/10/05/opel-5190050_1280.jpg",
     description: `Open-top sports car with mid-engine layout.
     Naturally aspirated flat-six engine for pure driving pleasure.
     Balanced handling with precise steering feedback.`,
