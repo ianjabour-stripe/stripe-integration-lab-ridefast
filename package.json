@@ -1,6 +1,7 @@
 {
   "name": "stripe-integration-lab",
   "version": "0.1.0",
+  "homepage": "https://ianjabour-stripe.github.io/stripe-integration-lab-ridefast",
   "dependencies": {
     "@stripe/react-stripe-js": "^5.3.0",
     "@stripe/stripe-js": "^8.0.0",
@@ -13,9 +14,9 @@
   },
   "devDependencies": {
     "concurrently": "4.1.2",
+    "gh-pages": "^6.1.1",
     "prettier": "^3.7.4"
   },
-  "homepage": "http://localhost:3000",
   "proxy": "http://localhost:4242",
   "scripts": {
     "start-client": "react-scripts start",
@@ -24,7 +25,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier -w src",
-    "start": "concurrently \"yarn start-client\" \"yarn start-server\""
+    "start": "concurrently \"yarn start-client\" \"yarn start-server\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
