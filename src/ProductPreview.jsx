@@ -4,14 +4,14 @@ import ProductImage from "./ProductImage";
 import { Link } from "react-router-dom";
 
 const previousProductId = (productId) => {
-  const productIdx = PRODUCTS.findIndex(({id}) => id === productId);
-  return PRODUCTS[productIdx === 0 ? PRODUCTS.length-1 : productIdx - 1].id;
-}
+  const productIdx = PRODUCTS.findIndex(({ id }) => id === productId);
+  return PRODUCTS[productIdx === 0 ? PRODUCTS.length - 1 : productIdx - 1].id;
+};
 
 const nextProductId = (productId) => {
-  const productIdx = PRODUCTS.findIndex(({id}) => id === productId);
-  return PRODUCTS[productIdx === PRODUCTS.length-1 ? 0 : productIdx + 1].id;
-}
+  const productIdx = PRODUCTS.findIndex(({ id }) => id === productId);
+  return PRODUCTS[productIdx === PRODUCTS.length - 1 ? 0 : productIdx + 1].id;
+};
 
 const ProductPreview = ({ productId, onClosePreview, setPreviewProduct }) => {
   React.useEffect(() => {
@@ -40,7 +40,10 @@ const ProductPreview = ({ productId, onClosePreview, setPreviewProduct }) => {
 
   return product ? (
     <div className="ProductPreview" onClick={onClosePreview}>
-      <div className="content" style={{ viewTransitionName: `product-${product.id}` }}>
+      <div
+        className="content"
+        style={{ viewTransitionName: `product-${product.id}` }}
+      >
         <ProductImage src={product.image} alt={product.name} />
         <div className="description">
           <h4>{product.name}</h4>

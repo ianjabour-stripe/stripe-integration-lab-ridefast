@@ -252,7 +252,8 @@ export const PRODUCTS = [
     id: "product_1026",
     name: "Porsche Boxster GTS",
     price: 239.99,
-    image: "https://cdn.pixabay.com/photo/2020/05/19/10/05/opel-5190050_1280.jpg",
+    image:
+      "https://cdn.pixabay.com/photo/2020/05/19/10/05/opel-5190050_1280.jpg",
     description: `Open-top sports car with mid-engine layout.
     Naturally aspirated flat-six engine for pure driving pleasure.
     Balanced handling with precise steering feedback.`,
@@ -271,7 +272,8 @@ export const PRODUCTS = [
     id: "product_1028",
     name: "Alpine A110",
     price: 189.99,
-    image: "https://cdn.pixabay.com/photo/2017/09/24/12/51/renault-2781729_1280.jpg",
+    image:
+      "https://cdn.pixabay.com/photo/2017/09/24/12/51/renault-2781729_1280.jpg",
     description: `Lightweight French sports car with retro-inspired design.
     Mid-engine layout with turbocharged four-cylinder engine.
     Agile handling and impressive power-to-weight ratio.`,

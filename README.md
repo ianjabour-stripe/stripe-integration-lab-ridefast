@@ -1,8 +1,4 @@
-# Accept a Payment with Elements and the Checkout Sessions API
-
-## Set Price ID
-
-In the back end code, replace `{{PRICE_ID}}` with a Price ID (`price_xxx`) that you created.
+# Stripe Integration Lab
 
 ## Running the sample
 
@@ -18,4 +14,4 @@ npm install
 npm start
 ~~~
 
-3. Go to [http://localhost:3000/checkout](http://localhost:3000/checkout)
+3. Go to [http://localhost:3000](http://localhost:3000)

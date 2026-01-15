@@ -1,14 +1,18 @@
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import ProductImage from "./ProductImage";
 
 const ProductListing = ({ product, onPreview, isPreviewOpen }) => {
   return (
-    <div className="ProductListing" >
+    <div className="ProductListing">
       <ProductImage
         src={product.image}
         alt={product.name}
         onClick={() => onPreview(product)}
-        style={isPreviewOpen ? undefined : { viewTransitionName: `product-${product.id}` }}
+        style={
+          isPreviewOpen
+            ? undefined
+            : { viewTransitionName: `product-${product.id}` }
+        }
       />
       <div className="info">
         <div>{product.name}</div>

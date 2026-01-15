@@ -1,6 +1,6 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProductListings from "./ProductListings";
-import CheckoutPage from './CheckoutPage';
+import CheckoutPage from "./CheckoutPage";
 import "./App.css";
 
 const App = () => {

@@ -1,7 +1,7 @@
-import * as React from 'react';
+import * as React from "react";
 import { PRODUCTS } from "./products";
 import ProductListing from "./ProductListing";
-import ProductPreview from './ProductPreview';
+import ProductPreview from "./ProductPreview";
 
 const ProductListings = () => {
   const [previewProduct, setPreviewProduct] = React.useState(null);
