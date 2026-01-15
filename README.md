@@ -4,7 +4,7 @@ This repository provides the boilerplate UI for a car rental service company wit
 
 ![Image of sample UI](./demo-image.png)
 
-In practice, you should only need to update the `CheckoutPage.jsx` and `server.js` files to get a working Stripe integration working.
+In practice, you should only need to update the `CheckoutPage.jsx` and `server.js` files to get a working Stripe integration.
 
 ## Running the sample
 
