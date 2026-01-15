@@ -5,7 +5,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <header>RideFast • Rentals</header>
         <Routes>
