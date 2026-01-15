@@ -1,6 +1,6 @@
 # Stripe Integration Lab
 
-This repository provides the boilerplate UI for car rental service company without any payment integration code added.
+This repository provides the boilerplate UI for a car rental service company without any payment integration code added.
 
 ![Image of sample UI](./demo-image.png)
 
