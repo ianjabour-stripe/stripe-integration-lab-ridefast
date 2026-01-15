@@ -1,6 +1,6 @@
 :root {
   --background: #0c0c0c;
-  --header-bg-color: #0c0c0c66;
+  --header-bg-color: #0c0c0c22;
   --text: #fff;
   --border-color: #333;
   --button-bg-color: #ffb7b2;
@@ -11,14 +11,6 @@
 
 * {
   box-sizing: border-box;
-}
-
-::view-transition-old(product-*),
-::view-transition-new(product-*) {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  overflow: clip;
 }
 
 .bodyLock {
@@ -62,15 +54,19 @@ button {
   display: grid;
   grid-template-rows: auto 1fr;
 
+  /* TODO: use grid to fix header position */
   header {
     padding: 16px;
     position: sticky;
     top: 0;
     left: 0;
     background: var(--header-bg-color);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px) hue-rotate(65deg) saturate(1.1);
     border-bottom: 1px solid var(--border-color);
-    z-index: 1;
+    z-index: 3;
+    text-align: center;
+    opacity: 1;
+    transition: all 300ms ease;
   }
 }
 
@@ -146,7 +142,7 @@ button {
 
 .ProductPreview {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
