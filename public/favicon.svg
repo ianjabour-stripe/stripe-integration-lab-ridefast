@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <!-- Gradient background for that 80s vibe -->
+    <linearGradient id="miamiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a0e7e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffb7b2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with gradient -->
+  <rect width="32" height="32" fill="url(#miamiGrad)" rx="4"/>
+  
+  <!-- Retro sun rays in background -->
+  <circle cx="16" cy="22" r="12" fill="#ffb7b2" opacity="0.3"/>
+  <circle cx="16" cy="22" r="9" fill="#ffb7b2" opacity="0.3"/>
+  <circle cx="16" cy="22" r="6" fill="#ffb7b2" opacity="0.3"/>
+  
+  <!-- Sleek sports car silhouette -->
+  <path d="M 7 18 L 9 13 L 12 13 L 14 10 L 18 10 L 20 13 L 23 13 L 25 18 L 24 19.5 L 23 19.5 L 23 18.5 C 23 18 22.5 17.5 22 17.5 C 21.5 17.5 21 18 21 18.5 L 21 19.5 L 11 19.5 L 11 18.5 C 11 18 10.5 17.5 10 17.5 C 9.5 17.5 9 18 9 18.5 L 9 19.5 L 8 19.5 Z" 
+        fill="#0c0c0c" stroke="#a0e7e5" stroke-width="0.5"/>
+  
+  <!-- Windshield accent -->
+  <path d="M 14 10 L 15 13 L 17 13 L 18 10 Z" fill="#a0e7e5" opacity="0.6"/>
+  
+  <!-- Speed lines with neon glow effect -->
+  <line x1="3" y1="16" x2="6" y2="16" stroke="#a0e7e5" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <line x1="2" y1="13" x2="5" y2="13" stroke="#ffb7b2" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="2" y1="19" x2="5" y2="19" stroke="#ffb7b2" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- Small highlight for shine -->
+  <circle cx="20" cy="12" r="1" fill="#a0e7e5" opacity="0.8"/>
+</svg>

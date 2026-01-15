@@ -79,6 +79,11 @@ button {
     text-align: center;
     transition: opacity 1000ms ease;
     view-transition-name: none;
+
+  background: linear-gradient(180deg, #a0e7e5 0%, #ffb7b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   }
 }
 
