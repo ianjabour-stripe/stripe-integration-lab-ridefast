@@ -50,11 +50,23 @@ button {
   }
 }
 
+::view-transition-old(product-*),
+::view-transition-new(product-*) {
+  header {
+    visibility: hidden;
+  }
+}
+
 .App {
   display: grid;
   grid-template-rows: auto 1fr;
 
-  /* TODO: use grid to fix header position */
+  &:has(.ProductPreview) {
+    header {
+      opacity: 0;
+    }
+  }
+
   header {
     padding: 16px;
     position: sticky;
@@ -63,10 +75,10 @@ button {
     background: var(--header-bg-color);
     backdrop-filter: blur(3px) hue-rotate(65deg) saturate(1.1);
     border-bottom: 1px solid var(--border-color);
-    z-index: 3;
+    z-index: 1;
     text-align: center;
-    opacity: 1;
-    transition: all 300ms ease;
+    transition: opacity 1000ms ease;
+    view-transition-name: none;
   }
 }
 
@@ -147,7 +159,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   cursor: zoom-out;
 
   .content {

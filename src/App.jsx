@@ -7,7 +7,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-        <header>RideFast • Car Rentals</header>
+        <header>RideFast • Rentals</header>
         <Routes>
           <Route path="/" element={<ProductListings />} />
           <Route path="/checkout/:productId" element={<CheckoutPage />} />

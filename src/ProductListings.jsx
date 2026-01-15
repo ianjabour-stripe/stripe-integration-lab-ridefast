@@ -21,7 +21,7 @@ const ProductListings = () => {
   }, []);
 
   return (
-    <main className="ProductListings">
+    <div className="ProductListings">
       {PRODUCTS.map((product) => (
         <ProductListing
           key={product.id}
@@ -37,7 +37,7 @@ const ProductListings = () => {
           setPreviewProduct={setPreviewProduct}
         />
       ) : null}
-    </main>
+    </div>
   );
 };
 
