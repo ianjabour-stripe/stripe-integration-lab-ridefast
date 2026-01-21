@@ -11,7 +11,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<ProductListings />} />
           <Route path="/checkout/:productId" element={<CheckoutPage />} />
-          <Route path="*" element={<div className="NotFound">404 Not found</div>} />
+          <Route
+            path="*"
+            element={<div className="NotFound">404 Not found</div>}
+          />
         </Routes>
       </div>
     </BrowserRouter>

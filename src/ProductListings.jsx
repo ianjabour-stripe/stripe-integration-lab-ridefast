@@ -1,7 +1,9 @@
 import * as React from "react";
-import { PRODUCTS } from "./products";
 import ProductListing from "./ProductListing";
 import ProductPreview from "./ProductPreview";
+import productsJson from "./products.json";
+
+const PRODUCTS = productsJson.products;
 
 const ProductListings = () => {
   const [previewProduct, setPreviewProduct] = React.useState(null);

@@ -1,7 +1,9 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import ProductImage from "./ProductImage";
-import { PRODUCTS } from "./products";
+import productsJson from "./products.json";
+
+const PRODUCTS = productsJson.products;
 
 // TODO: fill in checkout form
 const CheckoutPage = () => {

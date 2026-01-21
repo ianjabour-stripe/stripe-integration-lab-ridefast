@@ -1,7 +1,9 @@
 import * as React from "react";
-import { PRODUCTS } from "./products";
 import ProductImage from "./ProductImage";
 import { Link } from "react-router-dom";
+import productsJson from "./products.json";
+
+const PRODUCTS = productsJson.products;
 
 const previousProductId = (productId) => {
   const productIdx = PRODUCTS.findIndex(({ id }) => id === productId);
