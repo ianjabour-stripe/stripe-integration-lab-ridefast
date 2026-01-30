@@ -16,7 +16,11 @@ const App = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
-        <header>RideFast • Rentals</header>
+        <header>
+          <Link to="/" style={{textDecoration: 'none'}}>
+            RideFast • Rentals
+          </Link>
+        </header>
         <Routes>
           <Route path="/" element={<ProductListings />} />
           <Route path="/checkout/:productId" element={<CheckoutPage />} />
