@@ -29,7 +29,7 @@
     "start": "concurrently \"yarn start-client\" \"yarn start-server\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "create-products": "node scripts/createStripeProducts.mjs"
+    "create-products": "node scripts/createStripeProducts.js"
   },
   "eslintConfig": {
     "extends": "react-app"

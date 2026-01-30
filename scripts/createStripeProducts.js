@@ -1,7 +1,9 @@
-import 'dotenv/config';
-import Stripe from 'stripe';
-import productsJson from '../src/products.json' assert { type: "json" };
+require('dotenv/config');
+const Stripe = require('stripe');
+const fs = require('fs');
+const path = require('path');
 
+const productsJson = require('../src/products.json');
 const PRODUCTS = productsJson.products;
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
