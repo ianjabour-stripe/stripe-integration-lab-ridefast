@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 app.use(express.static("public"));
 
+// This should not need to be updated
 const YOUR_DOMAIN = "http://localhost:3000";
 
 app.post("/create-checkout-session", async (req, res) => {
