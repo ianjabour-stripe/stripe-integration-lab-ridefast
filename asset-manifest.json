@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/stripe-integration-lab-ridefast/static/css/main.fa014aa0.css",
-    "main.js": "/stripe-integration-lab-ridefast/static/js/main.402a4400.js",
+    "main.css": "/stripe-integration-lab-ridefast/static/css/main.fa157a2c.css",
+    "main.js": "/stripe-integration-lab-ridefast/static/js/main.4ec0d299.js",
     "index.html": "/stripe-integration-lab-ridefast/index.html",
-    "main.fa014aa0.css.map": "/stripe-integration-lab-ridefast/static/css/main.fa014aa0.css.map",
-    "main.402a4400.js.map": "/stripe-integration-lab-ridefast/static/js/main.402a4400.js.map"
+    "main.fa157a2c.css.map": "/stripe-integration-lab-ridefast/static/css/main.fa157a2c.css.map",
+    "main.4ec0d299.js.map": "/stripe-integration-lab-ridefast/static/js/main.4ec0d299.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa014aa0.css",
-    "static/js/main.402a4400.js"
+    "static/css/main.fa157a2c.css",
+    "static/js/main.4ec0d299.js"
   ]
 }
