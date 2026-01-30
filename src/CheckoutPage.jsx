@@ -27,7 +27,10 @@ const CheckoutForm = ({product}) => {
     handlePaymentComplete();
   }
 
-  const total = (product.price * days).toFixed(2);
+  const total = Number((product.price * days).toFixed(2)).toLocaleString('en-US', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  });
 
   return (
     <form onSubmit={handleSubmit}>
